@@ -30,7 +30,7 @@ using System;
 using System.Runtime.InteropServices;
 
 public static class NativeMethods {
-	[DllImport("C:\\example\\toastlib.dll", CallingConvention = CallingConvention.Cdecl)]
+	[DllImport("C:\\example\\toastlib.dll", CallingConvention = CallingConvention.StdCall)]
 	public static extern int toast_show_simple(IntPtr title, IntPtr message, IntPtr app_id);
 }
 "@
